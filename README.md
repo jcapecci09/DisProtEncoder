@@ -1,6 +1,8 @@
 # DisProtEncoder
 CLI tool for parsing DisProt annotations, retrieving UniProt sequences, and converting disorder regions into binary-encoded labels for protein disorder and IDR analysis.
 
+## Usage Instructions
+
 ## Install to PATH
 
 A shell installer is included to allow `DisProtEncoder` to be run from any directory.
@@ -40,3 +42,4 @@ source ~/.bashrc
 ```bash
 DisProtEncoder -i consensus_IDR.txt
 ```
+
