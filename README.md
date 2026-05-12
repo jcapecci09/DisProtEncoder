@@ -43,7 +43,7 @@ source ~/.bashrc
 DisProtEncoder -i consensus_IDR.txt
 ```
 
-## Command line flags
+## Command-line arguments
 | Flag | Description | Required | Default |
 |---|---|---|---|
 | `-i` | Input consensus sequence file from [DisProt](https://disprot.org) | Yes | — |
