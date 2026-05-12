@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Script to extract data from DisProt and create two files: 
 
 1. Recoded DisProt fasta file
