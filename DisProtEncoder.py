@@ -16,6 +16,7 @@ import argparse
 import sys
 
 class  DisProtEncoderError(Exception):
+    """Special DisProtEncoder error to prompt user when given wrong input"""
     pass
 
 
@@ -47,15 +48,15 @@ def parse_consensus(fasta: str) -> tuple[list[str], dict[str, str]]:
 
             # collect accessions and headers
             if line.startswith('>'):
-                fastas_recoded[line ] = ''
-                current_header = line
-                line_split = line.split(' ')
-                acc.append(line_split[1].replace('acc=', '').strip())
+                fastas_recoded[line] = ''   # Add header to dictionary 
+                current_header = line       # track current headers
+                line_split = line.split(' ')    # split by spaces
+                acc.append(line_split[1].replace('acc=', '').strip())   # grab UniProt accessions and add to list
             
             # recode sequences and save in dictionary
             else:
-                line_recoded = line.replace('-', '0').replace('D', '1').replace('T', '0')
-                fastas_recoded[current_header] += line_recoded
+                line_recoded = line.replace('-', '0').replace('D', '1').replace('T', '0')       # Replace line with 0's and 1's
+                fastas_recoded[current_header] += line_recoded                                  # map line with current header in  dictionary
     
     return acc, fastas_recoded
 
@@ -92,7 +93,7 @@ def download(url: str):
     except Exception as e:
 
         # Catch connection/time out errors without crashing program
-        print(f"Error: {url} -> {e}")
+        print(f"Error: {url} -> {e}. Try reducing number of workers (-w) if errors persist.")
         return None
         
                 
@@ -175,6 +176,7 @@ def main():
         else:
             print('Data already retrieved')
             print(f'look for UniProt.fasta in {directory}')
+
 
 if __name__ == '__main__':
     main()
