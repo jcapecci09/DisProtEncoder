@@ -1,7 +1,7 @@
 # DisProtEncoder
 
 ## Overview
-CLI tool for parsing DisProt annotations, retrieving UniProt sequences, and converting disorder regions into binary-encoded labels for protein disorder and IDR analysis.
+CLI tool for parsing DisProt consensus sequence annotations, retrieving UniProt sequences, and converting disorder regions into binary-encoded labels for protein disorder and IDR analysis.
 
 ## Installation
 
