@@ -3,7 +3,7 @@
 ## Overview
 CLI tool for parsing DisProt annotations, retrieving UniProt sequences, and converting disorder regions into binary-encoded labels for protein disorder and IDR analysis.
 
-## Install to PATH
+## Installation
 
 A shell installer is included to allow `DisProtEncoder` to be run from any directory.
 
@@ -46,7 +46,7 @@ DisProtEncoder -i consensus_IDR.txt
 ## Command line flags
 | Flag | Description | Required | Default |
 |---|---|---|---|
-| `-i` | Input consensus sequence file from [DisProt](https://disprot.org/?utm_source=chatgpt.com) | Yes | — |
+| `-i` | Input consensus sequence file from [DisProt](https://disprot.org) | Yes | — |
 | `-o` | Name of output directory | No | `Data/` |
 | `-t` | Output type: `0` = both outputs, `1` = UniProt FASTA only, `2` = recoded FASTA only | No | `0` |
 | `-w` | Number of workers used for UniProt downloads | No | `16` |
@@ -109,6 +109,7 @@ KITDTLIHLMAKAGLTLQQQHQRLAQLLLILSHIRHMSNKGMEHLYSMKCKNVVPLYDLL
 LEMLDAHRLHAPTSRGGASVEETDQSHLATAGSTSSHSLQKYYITGEAEGFPATV
 ```
 
+## Data Sources
 
-
-
+- [DisProt](https://disprot.org/) — database of intrinsically disordered proteins and regions
+- [UniProt](https://www.uniprot.org/) — protein sequence and functional information database
