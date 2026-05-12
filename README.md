@@ -49,6 +49,6 @@ DisProtEncoder -i consensus_IDR.txt
 | `-i` | Input consensus sequence file from [DisProt](https://disprot.org/?utm_source=chatgpt.com) | Yes | — |
 | `-o` | Name of output directory | No | `Data/` |
 | `-t` | Output type: `0` = both outputs, `1` = UniProt FASTA only, `2` = recoded FASTA only | No | `0` |
-| `-w` | Number of workers used for UniProt downloads | No | System default |
+| `-w` | Number of workers used for UniProt downloads | No | `16` |
 
 ## Usage example
