@@ -55,7 +55,7 @@ DisProtEncoder -i consensus_IDR.txt -o output
 
 The tool will generate the following files in the output directory.
 
-### `consensus_IDR_recoded.txt`
+### 1. `consensus_IDR_recoded.txt`
 
 Disordered regions (`D`) are encoded as `1`, while transition regions (`T`) and ordered regions (`-`) are encoded as `0`.
 
@@ -71,7 +71,7 @@ Disordered regions (`D`) are encoded as `1`, while transition regions (`T`) and 
 00000000000000000000000000000000000
 ```
 
-### `UniProt.fasta`
+### 2. `UniProt.fasta`
 
 FASTA sequence downloaded from UniProt associated with the accession number in the DisProt file.
 
