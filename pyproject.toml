@@ -1,0 +1,15 @@
+[build-system]
+requires = ['setuptools', 'setuptools-scm']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'DisProtEncoder'
+version = '1.0.0'
+description = 'Encodes DisProt IDR sequences and downloads UniProt data'
+readme = 'README.md'
+dependencies = [
+    "requests"
+]
+
+[project.scripts]
+DisProtEncoder = "DisProtEncoder.DisProtEncoder:main"
