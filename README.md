@@ -7,7 +7,7 @@ CLI tool for parsing DisProt consensus sequence annotations, retrieving UniProt 
 `DisProtEncoder` can be installed locally using pip
 
 ```bash
-pip install git+https://github.com/jcapecci09/DisProtEncoder.git****
+pip install git+https://github.com/jcapecci09/DisProtEncoder.git
 ```
 
 ## Command-line arguments
