@@ -18,6 +18,7 @@ git clone https://github.com/jcapecci09/DisProtEncoder.git
 cd DisProtEncoder
 ```
 
+### 3. Install the package
 ```bash
 pip install .
 ```
