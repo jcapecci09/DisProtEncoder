@@ -4,8 +4,7 @@
 CLI tool for parsing DisProt consensus sequence annotations, retrieving UniProt sequences, and converting disorder regions into binary-encoded labels for protein disorder and IDR analysis.
 
 ## Installation
-
-A shell installer is included to allow `DisProtEncoder` to be run from any directory.
+`DisProtEncoder` can be installed locally using pip
 
 ### 1. Clone the Repository
 
@@ -19,28 +18,8 @@ git clone https://github.com/jcapecci09/DisProtEncoder.git
 cd DisProtEncoder
 ```
 
-### 3. Make the Installer Executable
-
 ```bash
-chmod +x installer.sh
-```
-
-### 4. Run the Installer
-
-```bash
-./installer.sh
-```
-
-### 5. Reload Your Shell
-
-```bash
-source ~/.bashrc
-```
-
-### 6. Run DisProtEncoder From Anywhere
-
-```bash
-DisProtEncoder -i consensus_IDR.txt
+pip install .
 ```
 
 ## Command-line arguments
