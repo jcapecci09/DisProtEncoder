@@ -40,7 +40,8 @@ Ensure the tool is installed, then run:
 DisProtEncoder -i consensus_IDR.txt -o output
 ```
 
-The tool will generate the following files in the output directory.
+## Outputs
+The tool will generate the following files in the output directory:
 
 ### 1. `consensus_IDR_recoded.txt`
 
